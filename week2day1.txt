@@ -1,8 +1,13 @@
-GlobalEnvironment - > UAT, Prod, test
-		EX: ip address of servers (URL of application)Collections - > application modules		EX: Incident, Change request and problem....local
+Global
+Environment - > UAT, Prod, test
+		EX: ip address of servers (URL of application)
+Collections - > application modules
+		EX: Incident, Change request and problem....
+local
 
 
-Classroom===========
+Classroom
+===========
 
 1. Create environment variable for server and replace it in request 
 2. Create Collection variable for table name in servicenow and replace it in request 
@@ -33,42 +38,18 @@ NewMan
 			npm intall - g newma-reporter-htmlextra			
 
 	Syntex:
-			newman run <collection path> -e <environment path> -g <global path> --reporter-html-export reportname.html
+			newman run <collection path> -e <environment path> -g <global path> -r htmlextra --reporter-htmlextra-export report.html
+
 
 
 1) Download jekins.war file 
 	https://www.jenkins.io/download/
-2)To run jenkins use below commands (port no : 8080)	java -jar jenkins.war
+2)To run jenkins use below commands (port no : 8080)
+	java -jar jenkins.war
 		(or)
 	java -jar jenkins.war --httpPort 8081
 3) Goto http://localhost:8080/
 4) create a new free style project 
 5) Goto Build -> add build steps -> Excute window batch command 
 6) past the Newmane command -> newman run <collection path> -e <environment path> -g <global path>
-
-
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
