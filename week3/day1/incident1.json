@@ -1,0 +1,7 @@
+[
+    {
+        "short_description":"Create Incident with body as json file 1",
+        "category":"Hardware",
+        "state": "1"
+    }
+]
